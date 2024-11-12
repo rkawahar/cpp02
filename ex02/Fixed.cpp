@@ -6,7 +6,7 @@
 /*   By: kawaharadaryou <kawaharadaryou@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:00:13 by kawaharadar       #+#    #+#             */
-/*   Updated: 2024/11/11 10:55:21 by kawaharadar      ###   ########.fr       */
+/*   Updated: 2024/11/12 17:02:36 by kawaharadar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ Fixed::Fixed(const Fixed& other) {
 }
 
 Fixed& Fixed::operator=(const Fixed& other) {
-	this->_num = other.getRawBits();
+	if (this != &other)
+		this->_num = other.getRawBits();
 	return *this;
 }
 

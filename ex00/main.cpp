@@ -6,7 +6,7 @@
 /*   By: kawaharadaryou <kawaharadaryou@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 07:48:14 by kawaharadar       #+#    #+#             */
-/*   Updated: 2024/11/08 09:03:54 by kawaharadar      ###   ########.fr       */
+/*   Updated: 2024/11/12 16:59:35 by kawaharadar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@ int main(void)
 	Fixed c;
 
 	c = b;
-	
+	std::cout << std::endl;
+
 	std::cout << a.getRawBits() << std::endl;
 	std::cout << b.getRawBits() << std::endl;
 	std::cout << c.getRawBits() << std::endl;
-
+	std::cout << std::endl;
 	return 0;
 }
